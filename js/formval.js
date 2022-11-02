@@ -1,7 +1,7 @@
 $.validator.addMethod("pwcheck",function(value) {
 	return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) && /[a-z]/.test(value) && /\d/.test(value) && /[A-Z]/.test(value);
 });
-$(document).ready(function() {
+$(document).ready(function(){
 	$("#formvalidate").validate({
 		errorClass: "error fail-alert",
 		validClass: "valid success-alert",
